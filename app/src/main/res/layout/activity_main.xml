@@ -20,32 +20,59 @@
             android:id="@+id/titleBanner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to Rock-Paper-Scissors!"
+            android:text="@string/welcome_to_rock_paper_scissors"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/instuctionBanner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please choose your weapon:"
+            android:text="@string/please_choose_your_weapon"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/playerRockButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rock" />
+            android:onClick="onClickRockButton"
+            android:text="@string/rock" />
 
         <Button
             android:id="@+id/playerPaperButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Paper" />
+            android:onClick="onClickPaperButton"
+            android:text="@string/paper" />
 
         <Button
             android:id="@+id/playerScissorsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scissors" />
+            android:onClick="onClickScissorsButton"
+            android:text="@string/scissors" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/playerWeaponChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/computerWeaponChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/winnerAndExplination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
